@@ -10,7 +10,7 @@ Bot API is based on HTTP-requests, but in this book I will use [Rubenlagus' libr
 
 You can install TelegramBots library with different methods:
 
-1. Using Maven: 
+* Using Maven: 
 
 ```xml
 <dependency>
@@ -20,5 +20,4 @@ You can install TelegramBots library with different methods:
 </dependency>
 ```
 
-2. 
-
+* Using [Jitpack](https://jitpack.io/#rubenlagus/TelegramBots/2.4.4.4)
