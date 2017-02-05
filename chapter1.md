@@ -1,4 +1,4 @@
-# Lesson1. Writing your first "echo" bot
+# Lesson 1. Writing your first "echo" bot
 
 Hello! If you want to know, how to code Telegram Bots on Java, you are on the right way!
 
