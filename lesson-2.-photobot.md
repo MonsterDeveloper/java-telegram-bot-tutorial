@@ -143,7 +143,7 @@ else if (update.hasMessage() && update.getMessage().hasPhoto()) {
 
 Lets take a look:
 
-![Photo's file_id](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/Bot_sends_photo.png "Bot sends file_id")
+![Photo's file_id](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_sends_photo.png "Bot sends file_id")
 
 Amazing! Now we know photo's file_id so we can send them by file_id. Lets make our bot answer with that photo when we send command `/pic`.
 
@@ -189,15 +189,15 @@ if (update.hasMessage() && update.getMessage().hasText()) {
 
 Now bot sends photo like this:
 
-![/pic command](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/Bot_sends_photo_command.png "Bot sends photo by command /pic")
+![/pic command](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_sends_photo_command.png "Bot sends photo by command /pic")
 
 And he can even reply to unknown command!
 
-![Unknown command](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/bot_unknown_command.png "Bot answers to unknown command")
+![Unknown command](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/bot_unknown_command.png "Bot answers to unknown command")
 
 Now lets take a look at [ReplyKeyboardMarkup](https://core.telegram.org/bots/api#replykeyboardmarkup). We will now create custom keyboard like this:
 
-![Custom keyboards preview](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/custom_keyboard_preview.png "Custom keyboards preview")
+![Custom keyboards preview](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/custom_keyboard_preview.png "Custom keyboards preview")
 
 Well, you already now how to make our bot recognise command. Lets make another `if` for command `/markup`.
 
@@ -259,7 +259,7 @@ else if (message_text.equals("Row 1 Button 1")) {
 
 Now, when user press button with "Row 1 Button 1" text on it, bot will send picture by `file_id` to user:
 
-![Bot sends photo from keyboard](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/Bot_custom_keyboard_photo.png "Bot sends photo from keyboard")
+![Bot sends photo from keyboard](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_custom_keyboard_photo.png "Bot sends photo from keyboard")
 
 And lets add "Hide keyboard" function when user send `/hide` command to bot. This can be done with `ReplyMarkupRemove`.
 
