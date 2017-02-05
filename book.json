@@ -7,7 +7,7 @@
     ],
     "pluginsConfig": {
         "disqus": {
-            "shortName": "",
+            "shortName": "writing-telegram-bots",
             "useIdentifier": true
         }
     }
