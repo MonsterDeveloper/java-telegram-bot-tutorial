@@ -80,12 +80,12 @@ Now, let's move on to the logic of our bot. As I said before, we want him to rep
 @Override
 public void onUpdateReceived(Update update) {
 
-    // Set variables
-    String message_text = update.getMessage().getText();
-    long chat_id = update.getMessage().getChatId();
-    
     // We check if the update has a message and the message has text
     if (update.hasMessage() && update.getMessage().hasText()) {
+        // Set variables
+        String message_text = update.getMessage().getText();
+        long chat_id = update.getMessage().getChatId();
+        
         SendMessage message = new SendMessage() // Create a message object object
                 .setChatId(chat_id)
                 .setText(message_text);
@@ -184,11 +184,13 @@ Here is all our files:
  public class MyAmazingBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
-        // Set variables
-        String message_text = update.getMessage().getText();
-        long chat_id = update.getMessage().getChatId();
+       
         // We check if the update has a message and the message has text
         if (update.hasMessage() && update.getMessage().hasText()) {
+            // Set variables
+            String message_text = update.getMessage().getText();
+            long chat_id = update.getMessage().getChatId();
+            
             SendMessage message = new SendMessage() // Create a message object object
                 .setChatId(chat_id)
                 .setText(message_text);
