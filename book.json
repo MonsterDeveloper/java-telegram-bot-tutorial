@@ -1,0 +1,15 @@
+{
+    "plugins": [
+        "disqus",
+        "back-to-top-button",
+        "asciinema",
+        "copy-code",
+        "copy-code-button"
+    ],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "",
+            "useIdentifier": true
+        }
+    }
+}
