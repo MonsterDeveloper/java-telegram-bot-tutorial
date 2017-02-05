@@ -2,7 +2,7 @@
     "plugins": [
         "disqus",
         "back-to-top-button",
-        "copy-code",
+        "asciinema",
         "copy-code-button"
     ],
     "pluginsConfig": {
