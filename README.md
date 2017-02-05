@@ -11,6 +11,7 @@ You can always contact me at Telegram: [@MonsterDeveloper](https://t.me/MonsterD
 ## Table of contents
 
 * [Lesson 1. Simple "echo" bot](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/chapter1.html)
+* [Lesson 2. PhotoBot](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-2.-photobot.html)
 
 ## Credits
 * [Rubenlagus](https://github.com/rubenlagus/) for his amazing library and support
