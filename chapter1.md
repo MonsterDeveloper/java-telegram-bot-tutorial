@@ -226,7 +226,7 @@ java -jar MyAmazingBot.jar
 
 Now we can see our bot running:
 
-![Bot is running](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/Bot_Reply.jpg "Here it is!")
+![Bot is running](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_Reply.jpg "Here it is!")
 
 Well, thats all for now. Hope to see you soon!:)
   
