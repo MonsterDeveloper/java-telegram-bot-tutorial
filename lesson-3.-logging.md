@@ -236,7 +236,7 @@ public class LoggingTestBot extends TelegramLongPollingBot {
 }
 ```
 
-Now it will do ~~ugly~~ log for us :smile:
+Now it will do ~~ugly~~ log for us:)
 
 ![Beautiful Logs 1](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_Logging_1.png "Beautiful Logging 1")
 
