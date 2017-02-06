@@ -242,4 +242,4 @@ Now it will do ~~ugly~~ log for us:)
 
 ![Beautiful Logs 2](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_Logging_2.png "Beautiful Logging 2")
 
-Well, thats all for now. In the next lesson we will learn about [webhooks](https://core.telegram.org/bots/api#setwebhook).
+Well, thats all for now. In the next lesson we will learn how to make your messages more beautiful with [unicode emojis:)](https://en.wikipedia.org/wiki/Emoji).
