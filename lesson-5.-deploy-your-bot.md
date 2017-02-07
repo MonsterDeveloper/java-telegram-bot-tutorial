@@ -20,13 +20,13 @@ You will need next software for that:
 * [PuTTY SSH Client](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 * [FileZilla FTP Client](https://filezilla-project.org/)
 
-When you install it, open PyTTY and write server IP and port (default 22).
+When you install it, open PuTTY and write server IP and port (default 22).
 
-![PyTTY login](https://pp.vk.me/c638720/v638720821/2062a/9fh0hk51pk8.jpg "PyTTY login")
+![PuTTY login](https://pp.vk.me/c638720/v638720821/2062a/9fh0hk51pk8.jpg "PuTTY login")
 
 And click "Open". You will see something like:
 
-![PyTTY Security Alert](https://pp.vk.me/c638720/v638720821/20632/3uszaTvQs2Y.jpg "PuTTY Security Alert")
+![PuTTY Security Alert](https://pp.vk.me/c638720/v638720821/20632/3uszaTvQs2Y.jpg "PuTTY Security Alert")
 
 Click "Yes". Then login as "root" user and with password that you have recieved via email. Now we need to install Java on your server. Type following:
 
