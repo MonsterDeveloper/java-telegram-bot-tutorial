@@ -278,7 +278,8 @@ else if (message_text.equals("/hide")) {
 }
 ```
 
-Here is code of our files:
+Here is code of our files. You can also find all sources at [GitHub repository](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/).
+
 
 > src/Main.java
 
