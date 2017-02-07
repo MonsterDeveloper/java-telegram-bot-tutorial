@@ -40,6 +40,8 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer
 ```
 
+{% asciinema %}https://asciinema.org/a/ctsijyfcmsnhruzwr87sf1ye6{% endasciinema %}
+
 Type `java -version` to check installation. You will see something like that:
 
 ![Java Version](https://pp.vk.me/c638720/v638720821/2063b/-I-QQPjSLcw.jpg "Java Version")
