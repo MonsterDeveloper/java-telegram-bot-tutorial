@@ -220,6 +220,9 @@ Here is all our files:
 
 Well done! Now we can pack our project into runnable `.jar` file and run it on our computer/server!
 
+You can find all sources to this lesson in [GitHub repository](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/).
+
+
 ```
 java -jar MyAmazingBot.jar
 ```
