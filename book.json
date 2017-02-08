@@ -3,12 +3,18 @@
         "disqus",
         "back-to-top-button",
         "asciinema",
-        "copy-code-button"
+        "copy-code-button",
+        "algolia"
     ],
     "pluginsConfig": {
         "disqus": {
             "shortName": "writing-telegram-bots",
             "useIdentifier": true
+        }, "algolia": {
+            "index": "lessons",
+            "applicationID": "C3LVYDULT2",
+            "publicKey": "f79dc1c1cc05f6b6075d9ac1b925a1e9",
+            "freeAccount": "true"
         }
     }
 }
