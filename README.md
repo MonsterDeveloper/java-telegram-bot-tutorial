@@ -16,6 +16,7 @@ You can find all sources at [GitHub repository](https://github.com/MonsterDevelo
 * [Lesson 3. Logging](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-3.-logging.html)
 * [Lesson 4. Emoji](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-4.-emoji.html)
 * [Lesson 5. Deploy your bot](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-5.-deploy-your-bot.html)
+* [Lesson 6. Inline keyboards and editing message's text](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-6.-inline-keyboards-and-editing-message%27s-text.html)
 
 ## Credits
 * [Rubenlagus](https://github.com/rubenlagus/) for his amazing library and support
