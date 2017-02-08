@@ -13,7 +13,7 @@
         }, "algolia": {
             "index": "lessons",
             "applicationID": "C3LVYDULT2",
-            "publicKey": "f79dc1c1cc05f6b6075d9ac1b925a1e9",
+            "publicKey": "19368b61d4d878ef0834602cdabf9b1a",
             "freeAccount": "true"
         }
     }
