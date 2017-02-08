@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['emoji', 'bot', 'telegram', 'emojis', 'unicode', '4']
+
+---
+
 # Lesson 4. Emoji
 
 Welcome back! Now your know, how to log messages from users. But how to make bot's messages more user-friendly and beautiful? The answer is - [emoji](https://en.wikipedia.org/wiki/Emoji). I think you know what is emoji, so let's move forward. 
