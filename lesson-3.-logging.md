@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['logging', 'bot', 'telegram', 'log', 'logger', '3']
+
+---
+
 # Lesson 3. Logging.
 
 Good afternoon everyone! Did you look into console? Kinda empty ya? Now, we want to see something, isn't it? Let's make a logging function!
