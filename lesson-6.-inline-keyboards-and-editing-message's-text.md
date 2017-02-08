@@ -1,6 +1,6 @@
 ---
 search:
-    keywords: ['bot', 'telegram', 'inline', 'keyboard', 'button', 'edit', 'message', 'message's', 'text', '2.0', '2', 'api', 'botapi']
+    keywords: ['bot', 'telegram', 'inline', 'keyboard', 'button', 'edit', 'message', 'text', '2.0', '2', 'api', 'botapi']
 
 ---
 
