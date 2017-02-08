@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['deploy', 'bot', 'telegram', 'do', 'digitalocean', '5', 'hosting', 'jar', 'artifact']
+
+---
+
 # Lesson 5. Deploy your bot
 
 I think, when you are reading this, you have created your own bot with the help from my book. So now, its time to run it not on your home computer ~~with Intel Pentium II~~, but on professional server hardware. I will show how to deploy your bot on [DigitalOcean hosting](https://m.do.co/c/1a3a7fad419f).
