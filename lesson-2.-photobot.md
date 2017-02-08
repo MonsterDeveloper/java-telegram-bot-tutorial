@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['photo', 'bot', 'telegram', 'reply markup', 'keyboard markup', '2']
+
+---
+
 # Lesson 2. Photo bot.
 
 Our today's mission - create a "photo" bot, that will send user a photo. It is just an example so there there will be no photos from online, no group chat support. Just local pics. But there is a good thing: we will learn how to create [custom keyboards](https://core.telegram.org/bots/api#replykeyboardmarkup), how to send [photos](https://core.telegram.org/bots/api#photosize) and create commands.
