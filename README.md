@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['table of contents', 'getting started', 'readme']
+
+---
+
 # Writing bots for Telegram on Java
 
 [![Telegram](https://img.shields.io/badge/chat-on%20telegram-66a8dd.svg)](https://t.me/MonsterDeveloper) 
