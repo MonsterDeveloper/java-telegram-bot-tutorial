@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['bot', 'telegram', 'inline', 'keyboard', 'button', 'edit', 'message', 'message's', 'text', '2.0', '2', 'api', 'botapi']
+
+---
+
 # Lesson 6. Inline keyboards and editing message's text
 
 I published poll in our [Telegram chat](https://t.me/JavaBotsApi) about next lesson. So, as you are reading this, Bots API 2.0 won.
