@@ -22,19 +22,19 @@ You can install TelegramBots library with different methods:
 <dependency>
         <groupId>org.telegram</groupId>
         <artifactId>telegrambots</artifactId>
-        <version>2.4.4</version>
+        <version>2.4.4.5</version>
 </dependency>
 ```
 
 * Using [Jitpack](https://jitpack.io/#rubenlagus/TelegramBots/2.4.4.4)
-* Or just download `.jar` file with dependencies from [here](https://github.com/rubenlagus/TelegramBots/releases/tag/2.4.4.4)
+* Or just download `.jar` file with dependencies from [here](https://github.com/rubenlagus/TelegramBots/releases/tag/2.4.4.5)
 
 In this tutorial I will use next machines:
 * Ubuntu 16.04 Server with 1GB of RAM
 * My home Windows 10 laptop with IntelliJ Idea pre-installed
 
 ## Lets go to code!
-Well, enough for words. Let's get down to buisness. In this lesson we will write simple bot that echoes everything we sent to him. Now, open `IntelliJ Idea` and create a new project. You can call it whatever you want. Then, dont forget to install `TelegramBots` library with preffered method. I think, that it is most easy to just download `.jar` from [here](https://github.com/rubenlagus/TelegramBots/releases/tag/2.4.4.4)
+Well, enough for words. Let's get down to buisness. In this lesson we will write simple bot that echoes everything we sent to him. Now, open `IntelliJ Idea` and create a new project. You can call it whatever you want. Then, dont forget to install `TelegramBots` library with preffered method. I think, that it is most easy to just download `.jar` from [here](https://github.com/rubenlagus/TelegramBots/releases/tag/2.4.4.5)
 
 Now, when you are in the project, create files `MyAmazingBot.java` and `Main.java` within the `src` directory. Open `MyAmazingBot.java` and lets write our actual bot:
 > Remember! The class must extends `TelegramLongPollingBot` and implement necessary methods
