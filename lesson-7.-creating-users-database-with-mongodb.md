@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['lesson 7', '7', 'mongodb', 'database', 'users database', 'statistics']
+
+---
+
 # Lesson 7. Creating users database with MongoDB
 
 Hey! As you're reading this, you know that I returned from Italy. It was very nice, but okey - you want to create users database for your bot. Disputes about what DB is better can live very long time, but I will choose MongoDB. It is [high-performance, schema-free document-oriented database](https://mongodb.com). Let's create actual 'body' of our bot. Well, as always. I will skip this step as I know you have your own bot and there is no need to pollute the great lesson unnecessary amount of code. If not, you can find all sources at [GitHub repo](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/). Now, import MongoDB's driver for Java. You can download it [here](http://mongodb.github.io/mongo-java-driver/) or import it from Maven. With IntelliJ Idea it is easier than you expect. Just go to **File < Project Structure... < Libraries < + < From Maven** and search for `org.mongodb:mongo-java-driver`. That's all. Import it in your bot file:
