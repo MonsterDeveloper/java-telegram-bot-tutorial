@@ -26,7 +26,7 @@ You can install TelegramBots library with different methods:
 </dependency>
 ```
 
-* Using [Jitpack](https://jitpack.io/#rubenlagus/TelegramBots/2.4.4.4)
+* Using [Jitpack](https://jitpack.io/#rubenlagus/TelegramBots/2.4.4.5)
 * Or just download `.jar` file with dependencies from [here](https://github.com/rubenlagus/TelegramBots/releases/tag/2.4.4.5)
 
 In this tutorial I will use next machines:
