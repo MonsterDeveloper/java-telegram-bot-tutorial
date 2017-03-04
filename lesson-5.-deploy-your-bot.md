@@ -11,13 +11,13 @@ I think, when you are reading this, you have created your own bot with the help 
 ## Creating droplet
 Firstly, you need to create account on DigitalOcean. Open [this link](https://m.do.co/c/1a3a7fad419f), enter your email and password and click "Create an account"
 
-![Register at DO](https://pp.vk.me/c638720/v638720821/20613/MSBDKWZBGD4.jpg "Register")
+![Register at DO](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/do_register.png "Register")
 
 Then, follow register insctructions. Once you are in your control panel, create a new droplet. 
 
 Select OS. I recommend using Ubuntu 16.04.01 x64. Then choose preffered plan. For Java bot, you can select 512-1GB RAM (its enough for start). Select datacenter's region (I recommend to choose nearest city), scroll down and click "Create". Check your email inbox for letter like this:
 
-![Droplet email](https://pp.vk.me/c638720/v638720821/20623/_v4iI97Y-WQ.jpg "Droplet settings email")
+![Droplet email](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/do_email.png "Droplet settings email")
 
 ## Connecting via SSH
 
@@ -28,11 +28,11 @@ You will need next software for that:
 
 When you install it, open PuTTY and write server IP and port (default 22).
 
-![PuTTY login](https://pp.vk.me/c638720/v638720821/2062a/9fh0hk51pk8.jpg "PuTTY login")
+![PuTTY login](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/do_pytty.png "PuTTY login")
 
 And click "Open". You will see something like:
 
-![PuTTY Security Alert](https://pp.vk.me/c638720/v638720821/20632/3uszaTvQs2Y.jpg "PuTTY Security Alert")
+![PuTTY Security Alert](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/do_fingerprint.png "PuTTY Security Alert")
 
 Click "Yes". Then login as "root" user and with password that you have recieved via email. Now we need to install Java on your server. Type following:
 
@@ -48,7 +48,7 @@ sudo apt-get install oracle-java8-installer
 
 Type `java -version` to check installation. You will see something like that:
 
-![Java Version](https://pp.vk.me/c638720/v638720821/2063b/-I-QQPjSLcw.jpg "Java Version")
+![Java Version](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/java_version.png "Java Version")
 
 ## Creating and uploading JAR
 
