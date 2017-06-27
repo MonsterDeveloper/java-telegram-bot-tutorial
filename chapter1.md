@@ -40,6 +40,8 @@ Now, when you are in the project, create files `MyAmazingBot.java` and `Main.jav
 > Remember! The class must extends `TelegramLongPollingBot` and implement necessary methods
 
 ```java
+import org.telegram.telegrambots.api.objects.Update;
+import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 public class MyAmazingBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
@@ -61,6 +63,8 @@ public class MyAmazingBot extends TelegramLongPollingBot {
 ```
 As you can understand, `getBotUsermane()` and `getBotToken()` must return bot's username and bot's token, obtained from [@BotFather](https://telegram.me/botfather). So now, our `MyAmazingBot.java` file will look like this:
 ```java
+import org.telegram.telegrambots.api.objects.Update;
+import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 public class MyAmazingBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
@@ -106,6 +110,9 @@ public void onUpdateReceived(Update update) {
 Good! But how do I run the bot? Well, its a good question.
 Lets save that file and open `Main.java`. This file will instantiate TelegramBotsApi and register our new bot. It will look like this:
 ```java
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.TelegramBotsApi;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
 public class Main {
     public static void main(String[] args) {
 
@@ -118,8 +125,11 @@ public class Main {
 }
 ```
 Now, lets initialize Api Context
-  ```java
-  public class Main {
+```java
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.TelegramBotsApi;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
+public class Main {
     public static void main(String[] args) {
         // Initialize Api Context
         ApiContextInitializer.init();
@@ -131,8 +141,11 @@ Now, lets initialize Api Context
 }
    ```
 Instantiate Telegram Bots API:
-  ```java
-  public class Main {
+```java
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.TelegramBotsApi;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
+public class Main {
     public static void main(String[] args) {
         // Initialize Api Context
         ApiContextInitializer.init();
@@ -144,8 +157,11 @@ Instantiate Telegram Bots API:
 }
   ```
 And register our bot:
-  ```java
-  public class Main {
+```java
+import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.TelegramBotsApi;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
+public class Main {
     public static void main(String[] args) {
         // Initialize Api Context
         ApiContextInitializer.init();
@@ -166,6 +182,9 @@ Here is all our files:
 > `src/Main.java`
 
  ```java
+  import org.telegram.telegrambots.ApiContextInitializer;
+  import org.telegram.telegrambots.TelegramBotsApi;
+  import org.telegram.telegrambots.exceptions.TelegramApiException;
   public class Main {
     public static void main(String[] args) {
         // Initialize Api Context
@@ -187,6 +206,8 @@ Here is all our files:
  > `src/MyAmazingBot.java`
  
  ```java
+ import org.telegram.telegrambots.api.objects.Update;
+ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
  public class MyAmazingBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
