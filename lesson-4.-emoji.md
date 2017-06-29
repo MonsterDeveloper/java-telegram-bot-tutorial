@@ -123,7 +123,7 @@ Once library is installed, import it to your bot class:
 import com.vdurmont.emoji.EmojiParser;
 ```
 
-Now you can view list of emojis at [EmojiPedia](http://emojipedia.org/) or [Emoji Cheat Sheet](webpagefx.com/tools/emoji-cheat-sheet/).
+Now you can view list of emojis at [EmojiPedia](http://emojipedia.org/) or [Emoji Cheat Sheet](http://webpagefx.com/tools/emoji-cheat-sheet/).
 To insert emoji, do this:
 
 ```java
