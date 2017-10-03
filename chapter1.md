@@ -22,11 +22,11 @@ You can install TelegramBots library with different methods:
 <dependency>
         <groupId>org.telegram</groupId>
         <artifactId>telegrambots</artifactId>
-        <version>3.0.1</version>
+        <version>Latest</version>
 </dependency>
 ```
 
-* Using [Jitpack](https://jitpack.io/#rubenlagus/TelegramBots/3.0.1)
+* Using [Jitpack](https://jitpack.io/#rubenlagus/TelegramBots/)
 * Or just download `.jar` file with dependencies from [here](https://github.com/rubenlagus/TelegramBots/releases/latest)
 
 In this tutorial I will use next machines:
