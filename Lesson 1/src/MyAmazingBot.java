@@ -14,7 +14,7 @@ public class MyAmazingBot extends TelegramLongPollingBot {
                 .setChatId(chat_id)
                 .setText(message_text);
             try {
-                sendMessage(message); // Sending our message object to user
+                execute(message); // Sending our message object to user
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
