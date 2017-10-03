@@ -26,7 +26,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                         .setChatId(chat_id)
                         .setText(message_text);
                 try {
-                    sendMessage(message); // Sending our message object to user
+                    execute(message); // Sending our message object to user
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -36,7 +36,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                         .setPhoto("AgADAgAD6qcxGwnPsUgOp7-MvnQ8GecvSw0ABGvTl7ObQNPNX7UEAAEC")
                         .setCaption("Photo");
                 try {
-                    sendPhoto(msg); // Call method to send the photo
+                    execute(msg); // Call method to send the photo
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -69,7 +69,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                 // Add it to the message
                 message.setReplyMarkup(keyboardMarkup);
                 try {
-                    sendMessage(message); // Sending our message object to user
+                    execute(message); // Sending our message object to user
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -80,7 +80,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                         .setCaption("Photo");
 
                 try {
-                    sendPhoto(msg); // Call method to send the photo
+                    execute(msg); // Call method to send the photo
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -91,7 +91,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                 ReplyKeyboardRemove keyboardMarkup = new ReplyKeyboardRemove();
                 msg.setReplyMarkup(keyboardMarkup);
                 try {
-                    sendMessage(msg); // Call method to send the photo
+                    execute(msg); // Call method to send the photo
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -100,7 +100,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                         .setChatId(chat_id)
                         .setText("Unknown command");
                 try {
-                    sendMessage(message); // Sending our message object to user
+                    execute(message); // Sending our message object to user
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -129,7 +129,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                     .setPhoto(f_id)
                     .setCaption(caption);
             try {
-                sendPhoto(msg); // Call method to send the message
+                execute(msg); // Call method to send the message
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
