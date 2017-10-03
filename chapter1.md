@@ -100,7 +100,7 @@ public void onUpdateReceived(Update update) {
                 .setChatId(chat_id)
                 .setText(message_text);
         try {
-            sendMessage(message); // Sending our message object to user
+            execute(message); // Sending our message object to user
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
@@ -222,7 +222,7 @@ Here is all our files:
                 .setChatId(chat_id)
                 .setText(message_text);
             try {
-                sendMessage(message); // Sending our message object to user
+                execute(message); // Sending our message object to user
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
