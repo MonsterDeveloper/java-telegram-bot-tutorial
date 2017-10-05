@@ -24,6 +24,7 @@ You can find all sources at [GitHub repository](https://github.com/MonsterDevelo
 * [Lesson 5. Deploy your bot](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-5.-deploy-your-bot.html)
 * [Lesson 6. Inline keyboards and editing message's text](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-6.-inline-keyboards-and-editing-message%27s-text.html)
 * [Lesson 7. Creating users database with MongoDB](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-7.-creating-users-database-with-mongodb.html)
+* [Lesson 8. Integrating with Redis](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-8-integrating-with-redis.html)
 
 ## Credits
 * [Rubenlagus](https://github.com/rubenlagus/) for his amazing library and support
