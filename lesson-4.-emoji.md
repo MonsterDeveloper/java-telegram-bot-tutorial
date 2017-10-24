@@ -66,7 +66,7 @@ public class EmojiTestBot extends TelegramLongPollingBot {
                     .setText(answer);
             log(user_first_name, user_last_name, Long.toString(user_id), message_text, answer);
             try {
-                sendMessage(message); // Sending our message object to user
+                execute(message); // Sending our message object to user
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
@@ -191,7 +191,7 @@ public class EmojiTestBot extends TelegramLongPollingBot {
                     .setText(answer);
             log(user_first_name, user_last_name, Long.toString(user_id), message_text, answer);
             try {
-                sendMessage(message); // Sending our message object to user
+                execute(message); // Sending our message object to user
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
