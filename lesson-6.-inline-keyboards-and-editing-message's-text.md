@@ -35,7 +35,7 @@ public class BotApi20 extends TelegramLongPollingBot {
                         .setChatId(chat_id)
                         .setText(message_text);
                 try {
-                    sendMessage(message); // Sending our message object to user
+                    execute(message); // Sending our message object to user
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -102,7 +102,7 @@ public void onUpdateReceived(Update update) {
                         .setChatId(chat_id)
                         .setText("You send /start");
                 try {
-                    sendMessage(message); // Sending our message object to user
+                    execute(message); // Sending our message object to user
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -140,7 +140,7 @@ public void onUpdateReceived(Update update) {
                 markupInline.setKeyboard(rowsInline);
                 message.setReplyMarkup(markupInline);
                 try {
-                    sendMessage(message); // Sending our message object to user
+                    execute(message); // Sending our message object to user
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -178,7 +178,7 @@ else if (update.hasCallbackQuery()) {
                         .setMessageId(toIntExact(message_id))
                         .setText(answer);
                 try {
-                    editMessageText(new_message); 
+                    execute(new_message); 
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -257,7 +257,7 @@ public class BotApi20 extends TelegramLongPollingBot {
                 markupInline.setKeyboard(rowsInline);
                 message.setReplyMarkup(markupInline);
                 try {
-                    sendMessage(message); // Sending our message object to user
+                    execute(message); // Sending our message object to user
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -278,7 +278,7 @@ public class BotApi20 extends TelegramLongPollingBot {
                         .setMessageId(toIntExact(message_id))
                         .setText(answer);
                 try {
-                    editMessageText(new_message);
+                    execute(new_message);
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
