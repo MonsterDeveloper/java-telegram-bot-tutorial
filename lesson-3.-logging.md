@@ -28,7 +28,7 @@ public class LoggingTestBot extends TelegramLongPollingBot {
                 .setChatId(chat_id)
                 .setText(message_text);
             try {
-                sendMessage(message); // Sending our message object to user
+                execute(message); // Sending our message object to user
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
@@ -94,7 +94,7 @@ public void onUpdateReceived(Update update) {
                     .setChatId(chat_id)
                     .setText(message_text);
         try {
-            sendMessage(message); // Sending our message object to user
+            execute(message); // Sending our message object to user
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
@@ -143,7 +143,7 @@ public void onUpdateReceived(Update update) {
                     .setText(answer);
         log(user_first_name, user_last_name, Long.toString(user_id), message_text, answer);
         try {
-            sendMessage(message); // Sending our message object to user
+            execute(message); // Sending our message object to user
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
@@ -210,7 +210,7 @@ public class LoggingTestBot extends TelegramLongPollingBot {
                     .setText(answer);
             log(user_first_name, user_last_name, Long.toString(user_id), message_text, answer);
             try {
-                sendMessage(message); // Sending our message object to user
+                execute(message); // Sending our message object to user
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
