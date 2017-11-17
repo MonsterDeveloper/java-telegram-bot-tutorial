@@ -61,7 +61,7 @@ public class MyAmazingBot extends TelegramLongPollingBot {
     }
 }
 ```
-As you can understand, `getBotUsermane()` and `getBotToken()` must return bot's username and bot's token, obtained from [@BotFather](https://telegram.me/botfather). So now, our `MyAmazingBot.java` file will look like this:
+As you can understand, `getBotUsername()` and `getBotToken()` must return bot's username and bot's token, obtained from [@BotFather](https://telegram.me/botfather). So now, our `MyAmazingBot.java` file will look like this:
 ```java
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
