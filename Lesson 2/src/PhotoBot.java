@@ -36,7 +36,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                         .setPhoto("AgADAgAD6qcxGwnPsUgOp7-MvnQ8GecvSw0ABGvTl7ObQNPNX7UEAAEC")
                         .setCaption("Photo");
                 try {
-                    execute(msg); // Call method to send the photo
+                    sendPhoto(msg); // Call method to send the photo
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -80,7 +80,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                         .setCaption("Photo");
 
                 try {
-                    execute(msg); // Call method to send the photo
+                    sendPhoto(msg); // Call method to send the photo
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -91,7 +91,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                 ReplyKeyboardRemove keyboardMarkup = new ReplyKeyboardRemove();
                 msg.setReplyMarkup(keyboardMarkup);
                 try {
-                    execute(msg); // Call method to send the photo
+                    sendPhoto(msg); // Call method to send the photo
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
@@ -129,7 +129,7 @@ public class PhotoBot extends TelegramLongPollingBot {
                     .setPhoto(f_id)
                     .setCaption(caption);
             try {
-                execute(msg); // Call method to send the message
+                sendPhoto(msg); // Call method to send the message
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
