@@ -1,5 +1,8 @@
+import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
+
 public class MyAmazingBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
@@ -11,8 +14,8 @@ public class MyAmazingBot extends TelegramLongPollingBot {
             long chat_id = update.getMessage().getChatId();
 
             SendMessage message = new SendMessage() // Create a message object object
-                .setChatId(chat_id)
-                .setText(message_text);
+                    .setChatId(chat_id)
+                    .setText(message_text);
             try {
                 execute(message); // Sending our message object to user
             } catch (TelegramApiException e) {
