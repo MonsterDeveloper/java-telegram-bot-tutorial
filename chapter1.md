@@ -40,8 +40,11 @@ Now, when you are in the project, create files `MyAmazingBot.java` and `Main.jav
 > Remember! The class must extends `TelegramLongPollingBot` and implement necessary methods
 
 ```java
+import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
+
 public class MyAmazingBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
@@ -63,8 +66,11 @@ public class MyAmazingBot extends TelegramLongPollingBot {
 ```
 As you can understand, `getBotUsername()` and `getBotToken()` must return bot's username and bot's token, obtained from [@BotFather](https://telegram.me/botfather). So now, our `MyAmazingBot.java` file will look like this:
 ```java
+import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
+
 public class MyAmazingBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
@@ -206,8 +212,11 @@ Here is all our files:
  > `src/MyAmazingBot.java`
  
  ```java
+ import org.telegram.telegrambots.api.methods.send.SendMessage;
  import org.telegram.telegrambots.api.objects.Update;
  import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+ import org.telegram.telegrambots.exceptions.TelegramApiException;
+
  public class MyAmazingBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
