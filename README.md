@@ -6,7 +6,7 @@ search:
     - readme
 ---
 
-# Writing bots for Telegram on Java
+# Writing Telegram Bots on Java
 
 [![Telegram](https://img.shields.io/badge/chat-on telegram-66a8dd.svg)](https://t.me/MonsterDeveloper)
 
@@ -25,7 +25,7 @@ All sources are available at [GitHub repository](https://github.com/MonsterDevel
 * [Lesson 3. Logging](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-3.-logging.html)
 * [Lesson 4. Emoji](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-4.-emoji.html)
 * [Lesson 5. Deploy your bot](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-5.-deploy-your-bot.html)
-* [Lesson 6. Inline keyboards and editing message's text](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-6.-inline-keyboards-and-editing-message's-text.html)
+* \[Lesson 6. Inline keyboards and editing message's text\]\([https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-6.-inline-keyboards-and-editing-message's-text.html](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-6.-inline-keyboards-and-editing-message's-text.html)\)
 * [Lesson 7. Creating users database with MongoDB](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-7.-creating-users-database-with-mongodb.html)
 * [Lesson 8. Integrating with Redis](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/content/lesson-8-integrating-with-redis.html)
 
