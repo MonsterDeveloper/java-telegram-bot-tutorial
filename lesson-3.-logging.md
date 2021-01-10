@@ -1,14 +1,20 @@
 ---
 search:
-    keywords: ['logging', 'bot', 'telegram', 'log', 'logger', '3']
-
+  keywords:
+    - logging
+    - bot
+    - telegram
+    - log
+    - logger
+    - '3'
 ---
 
-# Lesson 3. Logging.
+# Lesson 3. Logging
 
 Good afternoon everyone! Did you look into console? Kinda empty ya? Now, we want to see something, isn't it? Let's make a logging function!
 
 ## Creating project
+
 As always, open `IntelliJ Idea` and create new project. Within the `src` folder create 2 files: `Main.java` and `LoggingTestBot.java`. Let's create a `body` of our bot:
 
 > src/LoggingTestBot.java
@@ -105,11 +111,12 @@ public void onUpdateReceived(Update update) {
 Create `logging` function:
 
 > Dont forget to import:
-```java
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-```
+>
+> ```java
+> import java.text.DateFormat;
+> import java.text.SimpleDateFormat;
+> import java.util.Date;
+> ```
 
 Add new `private` function:
 
@@ -124,7 +131,7 @@ private void log(String first_name, String last_name, String user_id, String txt
     }
 ```
 
-Now we need just call this function when we want to log 
+Now we need just call this function when we want to log
 
 ```java
 public void onUpdateReceived(Update update) {
@@ -244,10 +251,11 @@ public class LoggingTestBot extends TelegramLongPollingBot {
 
 You can also find all sources at [GitHub repository](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/).
 
-Now it will do ~~ugly~~ log for us:)
+Now it will do ~~ugly~~ log for us:\)
 
-![Beautiful Logs 1](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_Logging_1.png "Beautiful Logging 1")
+![Beautiful Logging 1](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_Logging_1.png)
 
-![Beautiful Logs 2](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_Logging_2.png "Beautiful Logging 2")
+![Beautiful Logging 2](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_Logging_2.png)
 
-Well, thats all for now. In the next lesson we will learn how to make your messages more beautiful with [unicode emojis:)](https://en.wikipedia.org/wiki/Emoji).
+Well, thats all for now. In the next lesson we will learn how to make your messages more beautiful with [unicode emojis:\)](https://en.wikipedia.org/wiki/Emoji).
+

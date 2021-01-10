@@ -1,17 +1,21 @@
 ---
 search:
-    keywords: ['photo', 'bot', 'telegram', 'reply markup', 'keyboard markup', '2']
-
+  keywords:
+    - photo
+    - bot
+    - telegram
+    - reply markup
+    - keyboard markup
+    - '2'
 ---
 
-# Lesson 2. Photo bot.
+# Lesson 2. PhotoBot
 
 Our today's mission - create a "photo" bot, that will send user a photo. It is just an example so there there will be no photos from online, no group chat support. Just local pics. But there is a good thing: we will learn how to create [custom keyboards](https://core.telegram.org/bots/api#replykeyboardmarkup), how to send [photos](https://core.telegram.org/bots/api#photosize) and create commands.
 
 ## Let's respect Telegram's servers
 
-Okey, for a start, let's prepare our pictures. Lets download 5 ~~completely unknown~~ photos. Just look: we will send same files to users many many times, so lets coast our traffic and disk space on Telegram Servers. It is amazing that we can upload our files at their server once and then just send files (photos, audio files, documents, voice messages and [etc.](https://core.telegram.org/bots/api#available-types)) by their unique `file_id`.
-Okey then. Now lets know photo's `file_id` when we will send it to our bot. As always, create a new project in `IntelliJ Idea` and create two files within the `src` directory: `Main.java` and `PhotoBot.java`. Open up first file and type next:
+Okey, for a start, let's prepare our pictures. Lets download 5 ~~completely unknown~~ photos. Just look: we will send same files to users many many times, so lets coast our traffic and disk space on Telegram Servers. It is amazing that we can upload our files at their server once and then just send files \(photos, audio files, documents, voice messages and [etc.](https://core.telegram.org/bots/api#available-types)\) by their unique `file_id`. Okey then. Now lets know photo's `file_id` when we will send it to our bot. As always, create a new project in `IntelliJ Idea` and create two files within the `src` directory: `Main.java` and `PhotoBot.java`. Open up first file and type next:
 
 > Dont forget to install [TelegramBots library](https://github.com/rubenlagus/TelegramBots)
 
@@ -50,7 +54,7 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 public class PhotoBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
-        
+
         // We check if the update has a message and the message has text
         if (update.hasMessage() && update.getMessage().hasText()) {
             // Set variables
@@ -87,7 +91,7 @@ Now lets update our `onUpdateReceived` method. We want to send `file_id` of the 
 ```java
 @Override
 public void onUpdateReceived(Update update) {
-    
+
     // We check if the update has a message and the message has text
     if (update.hasMessage() && update.getMessage().hasText()) {
         // Set variables
@@ -114,7 +118,7 @@ else if (update.hasMessage() && update.getMessage().hasPhoto()) {
     // Message contains photo
     // Set variables
     long chat_id = update.getMessage().getChatId();
-    
+
     // Array with photo objects with different sizes
     // We will get the biggest photo from that array
     List<PhotoSize> photos = update.getMessage().getPhoto();
@@ -149,9 +153,9 @@ else if (update.hasMessage() && update.getMessage().hasPhoto()) {
 
 Lets take a look:
 
-![Photo's file_id](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_sends_photo.png "Bot sends file_id")
+![Bot sends file\_id](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_sends_photo.png)
 
-Amazing! Now we know photo's file_id so we can send them by file_id. Lets make our bot answer with that photo when we send command `/pic`.
+Amazing! Now we know photo's file\_id so we can send them by file\_id. Lets make our bot answer with that photo when we send command `/pic`.
 
 ```java
 if (update.hasMessage() && update.getMessage().hasText()) {
@@ -195,20 +199,19 @@ if (update.hasMessage() && update.getMessage().hasText()) {
 
 Now bot sends photo like this:
 
-![/pic command](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_sends_photo_command.png "Bot sends photo by command /pic")
+![Bot sends photo by command /pic](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_sends_photo_command.png)
 
 And he can even reply to unknown command!
 
-![Unknown command](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/bot_unknown_command.png "Bot answers to unknown command")
+![Bot answers to unknown command](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/bot_unknown_command.png)
 
 Now lets take a look at [ReplyKeyboardMarkup](https://core.telegram.org/bots/api#replykeyboardmarkup). We will now create custom keyboard like this:
 
-![Custom keyboards preview](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/custom_keyboard_preview.png "Custom keyboards preview")
+![Custom keyboards preview](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/custom_keyboard_preview.png)
 
 Well, you already now how to make our bot recognise command. Lets make another `if` for command `/markup`.
 
-> Remember! When you press the button, it will send to bot the text on this button.
-> For example, if I put "Hello" text on the button, when I press it, it will send "Hello" text for me
+> Remember! When you press the button, it will send to bot the text on this button. For example, if I put "Hello" text on the button, when I press it, it will send "Hello" text for me
 
 ```java
 else if (message_text.equals("/markup")) {
@@ -265,7 +268,7 @@ else if (message_text.equals("Row 1 Button 1")) {
 
 Now, when user press button with "Row 1 Button 1" text on it, bot will send picture by `file_id` to user:
 
-![Bot sends photo from keyboard](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_custom_keyboard_photo.png "Bot sends photo from keyboard")
+![Bot sends photo from keyboard](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_custom_keyboard_photo.png)
 
 And lets add "Hide keyboard" function when user send `/hide` command to bot. This can be done with `ReplyMarkupRemove`.
 
@@ -285,7 +288,6 @@ else if (message_text.equals("/hide")) {
 ```
 
 Here is code of our files. You can also find all sources at [GitHub repository](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/).
-
 
 > src/Main.java
 
@@ -467,4 +469,5 @@ public class PhotoBot extends TelegramLongPollingBot {
 }
 ```
 
-Now you can create and remove custom `ReplyMarkup` keyboards, create custom commands and send photos by `file_id`! You are doing very well! Hope to see you soon:)
+Now you can create and remove custom `ReplyMarkup` keyboards, create custom commands and send photos by `file_id`! You are doing very well! Hope to see you soon:\)
+

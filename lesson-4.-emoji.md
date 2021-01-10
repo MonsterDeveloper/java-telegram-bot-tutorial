@@ -1,12 +1,17 @@
 ---
 search:
-    keywords: ['emoji', 'bot', 'telegram', 'emojis', 'unicode', '4']
-
+  keywords:
+    - emoji
+    - bot
+    - telegram
+    - emojis
+    - unicode
+    - '4'
 ---
 
 # Lesson 4. Emoji
 
-Welcome back! Now your know, how to log messages from users. But how to make bot's messages more user-friendly and beautiful? The answer is - [emoji](https://en.wikipedia.org/wiki/Emoji). I think you know what is emoji, so let's move forward. 
+Welcome back! Now your know, how to log messages from users. But how to make bot's messages more user-friendly and beautiful? The answer is - [emoji](https://en.wikipedia.org/wiki/Emoji). I think you know what is emoji, so let's move forward.
 
 Now, open `IntelliJ Idea` and create a new project. Create files `Main.java` and `EmojiTestBot.java` within the `src` directory. Here is first look of our files:
 
@@ -101,17 +106,18 @@ public class EmojiTestBot extends TelegramLongPollingBot {
 Okey. Now lets install [emoji library](https://github.com/vdurmont/emoji-java):
 
 * Via `Maven`:
-```xml
-<dependency>
+
+  ```markup
+  <dependency>
   <groupId>com.vdurmont</groupId>
   <artifactId>emoji-java</artifactId>
   <version>3.1.3</version>
-</dependency>
-```
+  </dependency>
+  ```
 
 * Via `Gradle`:
 
-```
+```text
 compile 'com.vdurmont:emoji-java:3.1.3'
 ```
 
@@ -123,14 +129,13 @@ Once library is installed, import it to your bot class:
 import com.vdurmont.emoji.EmojiParser;
 ```
 
-Now you can view list of emojis at [EmojiPedia](http://emojipedia.org/) or [Emoji Cheat Sheet](http://webpagefx.com/tools/emoji-cheat-sheet/).
-To insert emoji, do this:
+Now you can view list of emojis at [EmojiPedia](http://emojipedia.org/) or [Emoji Cheat Sheet](http://webpagefx.com/tools/emoji-cheat-sheet/). To insert emoji, do this:
 
 ```java
 String answer = EmojiParser.parseToUnicode("Here is a smile emoji: :smile:\n\n Here is alien emoji: :alien:");
 ```
 
-Where `:smile:` or `:alien:` is emoji alias or emoji short code. You can also view them at EmojiPedia or Emoji Cheat Sheet. 
+Where `:smile:` or `:alien:` is emoji alias or emoji short code. You can also view them at EmojiPedia or Emoji Cheat Sheet.
 
 Here is source code. You can also find it on [GitHub](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial).
 
@@ -225,6 +230,7 @@ public class EmojiTestBot extends TelegramLongPollingBot {
 
 Now you can see our beautiful messages:
 
-![Bot sending emoji](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_emoji.png "Bot sends messages with emoji")
+![Bot sends messages with emoji](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/raw/master/media/Bot_emoji.png)
 
 Our lesson came to an end. Thank you for reading this. See you soon!
+

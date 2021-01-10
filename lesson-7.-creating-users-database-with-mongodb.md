@@ -1,15 +1,19 @@
 ---
 search:
-    keywords: ['lesson 7', '7', 'mongodb', 'database', 'users database', 'statistics']
-
+  keywords:
+    - lesson 7
+    - '7'
+    - mongodb
+    - database
+    - users database
+    - statistics
 ---
 
 # Lesson 7. Creating users database with MongoDB
 
-Hey! As you're reading this, you know that I returned from Italy. It was very nice, but okey - you want to create users database for your bot. Disputes about what DB is better can live very long time, but I will choose MongoDB. It is [high-performance, schema-free document-oriented database](https://mongodb.com). Let's create actual 'body' of our bot. Well, as always. I will skip this step as I know you have your own bot and there is no need to pollute the great lesson unnecessary amount of code. If not, you can find all sources at [GitHub repo](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/). Now, import MongoDB's driver for Java. You can download it [here](http://mongodb.github.io/mongo-java-driver/) or import it from Maven. With IntelliJ Idea it is easier than you expect. Just go to **File < Project Structure... < Libraries < + < From Maven** and search for `org.mongodb:mongo-java-driver`. That's all. Import it in your bot file:
+Hey! As you're reading this, you know that I returned from Italy. It was very nice, but okey - you want to create users database for your bot. Disputes about what DB is better can live very long time, but I will choose MongoDB. It is [high-performance, schema-free document-oriented database](https://mongodb.com). Let's create actual 'body' of our bot. Well, as always. I will skip this step as I know you have your own bot and there is no need to pollute the great lesson unnecessary amount of code. If not, you can find all sources at [GitHub repo](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/). Now, import MongoDB's driver for Java. You can download it [here](http://mongodb.github.io/mongo-java-driver/) or import it from Maven. With IntelliJ Idea it is easier than you expect. Just go to **File &lt; Project Structure... &lt; Libraries &lt; + &lt; From Maven** and search for `org.mongodb:mongo-java-driver`. That's all. Import it in your bot file:
 
 ```java
-
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
@@ -21,7 +25,7 @@ import org.json.JSONObject;
 
 You will also need `org.slf4j:slf4j-nop` library to disable additional logging, like this:
 
-```
+```text
 11:01:15.406 [pool-1-thread-1] DEBUG org.mongodb.driver.protocol.query - Query completed
 
 11:01:25.174 [cluster-ClusterId{value='554dbecb1b554f11e86c3a69', description='null'}-localhost:27017] DEBUG org.mongodb.driver.cluster - Checking status of localhost:27017
@@ -55,7 +59,7 @@ private String check(String first_name, String last_name, int user_id, String us
     }
 ```
 
-Don't do  [kernel panic](https://en.wikipedia.org/wiki/Kernel_panic), I will explain everything now.
+Don't do [kernel panic](https://en.wikipedia.org/wiki/Kernel_panic), I will explain everything now.
 
 Here we set new connection to MongoDB's server:
 
@@ -63,7 +67,7 @@ Here we set new connection to MongoDB's server:
 MongoClientURI connectionString = new MongoClientURI("mongodb://host:port");
 ```
 
-Replace `host:port` with your Mongo's host and port. You can find how to setup MongoDB server for Ubuntu [here](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04).  Then we set our database and collection. Replace this names with your own.
+Replace `host:port` with your Mongo's host and port. You can find how to setup MongoDB server for Ubuntu [here](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04). Then we set our database and collection. Replace this names with your own.
 
 ```java
 MongoClient mongoClient = new MongoClient(connectionString);
@@ -150,6 +154,6 @@ try {
 Well, that's all for now. Hope to see you soon!
 
 > Thanks for reading this.
-> 
-> *MonsterDeveloper*
+>
+> _MonsterDeveloper_
 

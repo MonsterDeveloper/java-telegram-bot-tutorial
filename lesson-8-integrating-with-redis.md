@@ -1,19 +1,16 @@
-
----
-search:
-    keywords: ['lesson 8', '8', 'redis', 'database', 'fast database', 'lettuce']
-
----
-
 # Lesson 8. Integrating with Redis
 
-Hi! Long time I haven't posted lessons. Sorry for that:) Today we are integrating our ~~highload~~ bot with lighting fast database called [Redis](https://redis.io). I am using it for data that needs quick access.
+search: keywords: \['lesson 8', '8', 'redis', 'database', 'fast database', 'lettuce'\]
 
-## Library
+## Lesson 8. Integrating with Redis
+
+Hi! Long time I haven't posted lessons. Sorry for that:\) Today we are integrating our ~~highload~~ bot with lighting fast database called [Redis](https://redis.io). I am using it for data that needs quick access.
+
+### Library
 
 For driver I chose [Lettuce](https://lettuce.io) because of its popularity and good documentation. You can download it [here](https://lettuce.io/core/release/download/) or install with Maven:
 
-```maven
+```text
 <dependency>
     <groupId>io.lettuce</groupId>
     <artifactId>lettuce-core</artifactId>
@@ -21,7 +18,7 @@ For driver I chose [Lettuce](https://lettuce.io) because of its popularity and g
 </dependency>
 ```
 
-## Establish connection
+### Establish connection
 
 Then, you need to connect to Redis:
 
@@ -29,13 +26,13 @@ Then, you need to connect to Redis:
 RedisClient redisClient;
 StatefulRedisConnection<String, String> redisConnection;
 RedisCommands<String, String> syncCommands;
-    
+
 redisClient = RedisClient.create("redis://localhost:6379/0"); // Format: redis://ip:post/dbNumber
 redisConnection = redisClient.connect();
 syncCommands = this.redisConnection.sync();
 ```
 
-## Connection established
+### Connection established
 
 And thats all! Now you can execute commands like that:
 
@@ -53,6 +50,4 @@ redisClient.shutdown();
 ```
 
 Very short lesson, but I think useful :D Thanks for your time, hope to see you soon!
-
-
 
