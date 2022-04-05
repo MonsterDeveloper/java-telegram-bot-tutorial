@@ -6,13 +6,13 @@ search:
     - readme
 ---
 
+* Note: this guide is not maintained. It's open for all contributions through GitHub.
+
 # Introduction
 
 [![Book Status](https://img.shields.io/badge/book-passing-brightgreen.svg)](https://www.gitbook.io/book/MonsterDeveloper/writing-telegram-bots-on-java/details)
 
 Hello everyone! While reading this book you will learn how to create Telegram Bots from start to finish. I assume you already know Java programming language.
-
-Feel free to contact me on Telegram if you have any questions/problems: [@MonsterDeveloper](https://t.me/MonsterDeveloper).
 
 All sources are available at [GitHub repository](https://github.com/MonsterDeveloper/java-telegram-bot-tutorial/).
 
