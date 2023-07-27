@@ -129,35 +129,16 @@ public void onUpdateReceived(Update update) {
 Good! But how do I run the bot? Well, its a good question. Lets save that file and open `Main.java`. This file will instantiate TelegramBotsApi and register our new bot. It will look like this:
 
 ```java
-import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
+import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 public class Main {
     public static void main(String[] args) {
-
-        // TODO Initialize Api Context
-
+        
         // TODO Instantiate Telegram Bots API
 
         // TODO Register our bot
-    }
-}
-```
-
-Now, lets initialize Api Context
-
-```java
-import org.telegram.telegrambots.ApiContextInitializer;
-import org.telegram.telegrambots.TelegramBotsApi;
-import org.telegram.telegrambots.exceptions.TelegramApiException;
-public class Main {
-    public static void main(String[] args) {
-        // Initialize Api Context
-        ApiContextInitializer.init();
-
-        // TODO Instantiate Telegram Bots API
-
-        // TODO Register our bot
+        
     }
 }
 ```
@@ -165,15 +146,12 @@ public class Main {
 Instantiate Telegram Bots API:
 
 ```java
-import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 public class Main {
     public static void main(String[] args) {
-        // Initialize Api Context
-        ApiContextInitializer.init();
         // Instantiate Telegram Bots API
-        TelegramBotsApi botsApi = new TelegramBotsApi();
+        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
 
         // TODO Register our bot
     }
@@ -183,16 +161,12 @@ public class Main {
 And register our bot:
 
 ```java
-import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 public class Main {
     public static void main(String[] args) {
-        // Initialize Api Context
-        ApiContextInitializer.init();
-
         // Instantiate Telegram Bots API
-        TelegramBotsApi botsApi = new TelegramBotsApi();
+        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
 
         // Register our bot
         try {
@@ -209,16 +183,12 @@ Here is all our files:
 > `src/Main.java`
 
 ```java
-  import org.telegram.telegrambots.ApiContextInitializer;
   import org.telegram.telegrambots.TelegramBotsApi;
   import org.telegram.telegrambots.exceptions.TelegramApiException;
   public class Main {
     public static void main(String[] args) {
-        // Initialize Api Context
-        ApiContextInitializer.init();
-
         // Instantiate Telegram Bots API
-        TelegramBotsApi botsApi = new TelegramBotsApi();
+        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
 
         // Register our bot
         try {
